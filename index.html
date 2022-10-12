@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NeuOS Example Application</title>
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/vitmalina/w2ui/master/dist/w2ui.min.css">
+</head>
+<body>
+
+<script type="module">
+    import { w2popup } from 'https://rawgit.com/vitmalina/w2ui/master/dist/w2ui.es6.min.js'
+
+    let appCode = `
+    <center>
+        <h1>Your Code Here!</h1>
+        <h2>Yes, it can be HTML code!</h2>
+    </center>
+    `;
+
+    w2popup.open({
+        title: 'Example Application',
+        width: 800,
+        height: 600,
+        text: appCode
+    })
+</script>
+
+</body>
+</html>
